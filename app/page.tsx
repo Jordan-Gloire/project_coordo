@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-blue-100 to-blue-200">
-      <h1 className="text-5xl font-bold mb-6 animate-bounce">Bienvenue sur l'Application de Jeux Interactifs</h1>
+      <h1 className="text-5xl font-bold mb-6 animate-bounce">{"Bienvenue sur l\'Application de Jeux Interactifs"}</h1>
       <p className="mb-8 text-lg">Sélectionnez une section ci-dessous :</p>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

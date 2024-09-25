@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react';
-import { PlayIcon, UserIcon } from '@heroicons/react/outline';
+import { PlayIcon} from '@heroicons/react/outline';
 
 const Enseignants = () => {
   const [games, setGames] = useState<string[]>([]);
@@ -17,6 +17,12 @@ const Enseignants = () => {
       setGames([...games, newGame]);
       setNewGame('');
     }
+  };
+
+  // Add this function to use setPerformances
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const addPerformance = (name: string, score: number) => {
+    setPerformances([...performances, { name, score }]);
   };
 
   return (
